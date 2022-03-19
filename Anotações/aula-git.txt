@@ -1,0 +1,50 @@
+						Anotações Git/GitHub
+
+O que é o Git/GitHub?
+Git nada mais é do que um controle de versões para todos os arquivos, utilizado pela grande massa de dev´s e empresas.
+
+GitHub é uma empresa que hospeda repositórios na nuvem, usa como base o git no versionamento dos arquivos e também
+permite o compartilhamento do código para o público. GitHub é um Sistema distribuído com código aberto.
+
+						Conceitos básicos:
+
+SHA1 = Secure Hash Algorithm, nada mais que um conjunto de funções hash criptográfadas projetada pela NSA.
+A encriptação gera um conjunto de caracteres indicadores de 40 dígitos que represanta a versão do arquivo.
+>> utilizamos o comando: openssl sha1 (nome do arquivo + extenção) ex: texto1.txt
+
+Blob = Um objeto que apenas armazena o conteúdo dos arquvios que segue um 
+fluxo binário de dados, cada blob possui seu SHA1.
+
+Tree = Equivalente ao diretório, as árvores no git são representadas também por SHA1 que apontam para outras árvores
+ou blobs
+
+Commit = Os commits são as unidades estruturais de um cronograma de projeto.Podem ser considerados instantâneos
+ou marcos ao longo do cronograma de um projeto, quando executamos o commit estamos pronto para realizar o upload dos estados 
+dos arquivos para a nuvem.
+
+						Chave SSH e Token:
+
+SSH = Metodo de identificação da minha máquina, onde tenho o endereço salvo no servidor para acessar diretamente.
+Token: chave eletrônica gerada para idenficar meu acesso (usuário + token pessoal), onde deve ser gravado em texto
+
+						Códigos e suas funções:
+
+git init = Ponto inicial para criarmos um repositório
+
+git add = Move o arquivo que está UNTRACKED (fora do repositório) para a fase STAGE passando para a TRACKED (preparado para o commit)
+
+git commit -m "mensagem" = executamos o envio do arquivo para a TRACKED UNMODIFIED (já está no nosso repositório)
+
+git config --list = Exibe nossa configuração atual
+
+git config --global -unset (user.email) = retira uma configuração no exemplo email
+
+git config --global user.email "email" = adiciona a configuração email que foi retirada
+
+git remote add origin (url) = adiciona um endereço para envio do repositório ORIGIN = apelido para o url
+
+git remote -v = exibe a lista de endereço para envio do repositório
+
+git push origin master = envia o repositório para o endereço (push = empurrar arquivo, origin = endereço, master local)
+
+git pull origin master = baixamos os arquivos do diretório para o git comparar as alterações dos códigos automaticamente e identificar erro
