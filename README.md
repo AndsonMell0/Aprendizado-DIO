@@ -1,7 +1,6 @@
-# Olá 👋
+# Olá, Bem vindo!👋
 
-Este é meu repositório especial 🌟, pois contém informações importantes dos conceitos e aplicações
-aprendidas durante os cursos que realizei na DIO.
+Este é meu repositório 🌟, Contendo informações e conhecimentos que adquiri durante minha caminhada até a fluência em TI.
 
 ## Certificações: 
 
